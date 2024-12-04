@@ -115,9 +115,11 @@ export default function Portfolio() {
           <p className="text-gray-900 mb-8">
             👋 Hello! I'm Chibueze Felix, a Senior Software Engineer specializing in mobile application development. With extensive experience in fintech and banking applications, I've led teams in developing successful products like CyberPay, Quantum Zenith, and various POS solutions. My expertise spans Flutter, Kotlin, and Swift, with a strong focus on creating secure and scalable financial applications.
           </p>
-          <button className="bg-gray-900 text-white px-6 py-3 rounded flex items-center gap-2 hover:bg-gray-800 transition-colors">
+          <button className="bg-gray-900 text-white px-6 py-3 rounded flex items-center gap-2 hover:bg-gray-800 transition-colors"
+         onClick={() => window.open('https://docs.google.com/document/d/1H8wnIBByY4ckiyYJeGfWlHILFSlt8QNQ0X2cVlf_cuM/edit?usp=sharing', '_blank', 'noopener,noreferrer')}
+        >
             <Terminal className="w-5 h-5" />
-            Contact me
+            My Resume
           </button>
         </div>
       </div>
