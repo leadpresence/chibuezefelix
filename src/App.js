@@ -4,13 +4,17 @@ import { Code, Layout, Terminal, Smartphone, CreditCard, Boxes } from 'lucide-re
 export default function Portfolio() {
   const [firstName, setFirstName] = React.useState('');
   const [email, setEmail] = React.useState('');
+    const startYear = 2018;
+  const currentYear = new Date().getFullYear();
+  const yearsOfExperience = currentYear - startYear;
+
 
   const skills = [
     { name: 'Mobile Dev', icon: <Smartphone className="w-6 h-6" />, details: 'Flutter, Kotlin, Swift' },
     { name: 'Architecture', icon: <Boxes className="w-6 h-6" />, details: 'MVVM, Clean Architecture' },
     { name: 'Payment Systems', icon: <CreditCard className="w-6 h-6" />, details: 'Fintech, Banking' },
     { name: 'Frontend', icon: <Layout className="w-6 h-6" />, details: 'UI/UX, Jetpack Compose' },
-    { name: 'Backend', icon: <Terminal className="w-6 h-6" />, details: 'Node.js, Firebase' },
+    { name: 'Backend', icon: <Terminal className="w-6 h-6" />, details: 'GO,C#,Java, Firebase' },
     { name: 'Development', icon: <Code className="w-6 h-6" />, details: 'CI/CD, Testing' },
   ];
 
@@ -41,7 +45,7 @@ export default function Portfolio() {
             Creating seamless<br />mobile experiences<br />from scratch
           </h1>
           <p className="text-gray-400 mb-8">
-            Senior Software Engineer specializing in mobile application development with 6 years of expertise in creating innovative fintech solutions and banking applications.
+            Senior Software Engineer specializing in mobile application development with {yearsOfExperience} years of expertise in creating innovative fintech solutions and banking applications.
           </p>
           <div className="space-y-4">
             <input
